@@ -1,4 +1,6 @@
 import turtle
+import random
+import time
 s=turtle.Screen()
 s.bgcolor("lightblue")
 s.title("Catch The Turtle")
@@ -17,9 +19,10 @@ turtle1.shapesize(stretch_wid=2, stretch_len=2, outline=None)
 turtle1.shape("turtle")
 turtle1.color("green")
 turtle1.penup()
-
-
-
+while True:
+    turtle1.speed(0)
+    turtle1.goto(random.randint(-330,300),random.randint(-280,270))
+    time.sleep(0.3)
 
 
 
